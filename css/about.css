@@ -6,7 +6,9 @@
     background-color: #191919;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 .about{
     width: 100%;
