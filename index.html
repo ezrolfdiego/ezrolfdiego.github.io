@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/captcha.css">
+    <link rel = "icon" href = "images/captcha-logo.png" type = "image/x-icon">
+</head>
+<body>
+
+    <div class="center">
+        <div class="content" id="myModal">
+            <div class="header">
+                <h2>Success!</h2>
+            </div>
+            <label for="click" class="fa-solid fa-check"></label>
+            <p>Verification complete, redirecting. . .</p>
+            <div class="underline"></div>
+            <span id="show_time">3</span>
+        </div>
+    </div>
+    
+
+    <div class="box">
+        <div class="form">
+            <h1>reCaptcha v6.9</h1>
+            <div class="captcha">
+                <label for="captcha-input">Please verify you are human.</label>
+                <div class="preview"></div>
+                <div class="captcha-form">
+                    <input type="text" id="captcha-form" required="required">
+                    <span>Enter the code</span>
+                    <button class="captcha-refresh">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="line">
+                <i></i>
+            </div>
+            <div class="form-input">
+                <button id="submit-btn">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/captcha.js"></script>
+</html>
